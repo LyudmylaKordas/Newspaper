@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+      
+<tiles-definitions>
+    <definition name="base.definition"
+        template="/WEB-INF/jsp/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+        <put-attribute name="sidebar" value="/WEB-INF/jsp/sidebar.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+    </definition>
+    
+    <definition name="category" extends="base.definition">
+        <put-attribute name="title" value="List categories" />
+        <put-attribute name="body" value="/WEB-INF/jsp/category.jsp" />
+    </definition>
+    
+    <definition name="advertisement" extends="base.definition">
+        <put-attribute name="title" value="List advertisements" />
+        <put-attribute name="body" value="/WEB-INF/jsp/advertisement.jsp" />
+    </definition>
+    
+    <definition name="addAdvertisement" extends="base.definition"> 
+        <put-attribute name="title" value="Add Advertisement" />
+        <put-attribute name="body" value="/WEB-INF/jsp/addAdvertisement.jsp" />
+    </definition>
+    
+    <definition name="editAdvertisement" extends="base.definition"> 
+        <put-attribute name="title" value="Edit Advertisement" />
+        <put-attribute name="body" value="/WEB-INF/jsp/editAdvertisement.jsp" />
+    </definition>
+    
+    <definition name="detailsAdvertisement" extends="base.definition"> 
+        <put-attribute name="title" value="View advertisement" />
+        <put-attribute name="body" value="/WEB-INF/jsp/detailsAdvertisement.jsp" />
+    </definition>
+    
+    <definition name="login" extends="base.definition">   
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    
+    <definition name="register" extends="base.definition">   
+        <put-attribute name="title" value="Registration" />
+        <put-attribute name="body" value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+
+</tiles-definitions>
